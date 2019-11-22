@@ -126,6 +126,11 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionNews()
+    {
+        return $this->render('news');
+    }
     
     
      public function actionSay($message = 'Hello'){

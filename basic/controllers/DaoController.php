@@ -11,7 +11,7 @@ class DaoController extends Controller
     public function actionAll()
     {
         $conn = \Yii::$app->db;
-        $sql = "select * from country";
+        $sql = "select * from news";
         $command =$conn->createCommand($sql);
         $data = $command->queryOne();
         return  $res=json_encode($data);
